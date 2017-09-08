@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<!-- Change CameraCapturer class visibility from package to public so it's generated -->
+	<attr path="/api/package[@name='org.webrtc']/class[@name='CameraCapturer']" name="visibility">public</attr>
+
+	<!-- Rename StatusReport.Value.Value to StatusReport.Value.Val to avoid conflict -->
+	<attr path="/api/package[@name='org.webrtc']/class[@name='StatsReport.Value']/field[@name='value']" name="name">val</attr>
+</metadata>
