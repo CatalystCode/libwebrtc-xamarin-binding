@@ -5,4 +5,20 @@
 
 	<!-- Rename StatusReport.Value.Value to StatusReport.Value.Val to avoid conflict -->
 	<attr path="/api/package[@name='org.webrtc']/class[@name='StatsReport.Value']/field[@name='value']" name="name">val</attr>
+
+
+  <!-- path=      "/api/package[@name='org.webrtc']/class[@name='HardwareVideoDecoderFactory']/method[@name='createDecoder' and count(parameter)=1 and parameter[1][@type='java.lang.String']]" -->
+
+  <!--
+  <add-node path="/api/package[@name='org.webrtc']/class[@name='EglBase..CC']">
+    <method abstract="false" deprecated="not deprecated" final="false" name="create$$STATIC$$" native="false" return="org.webrtc.EglBase" static="true" synchronized="false" visibility="public">
+      <parameter name="sharedContext" type="org.webrtc.EglBase.Context"></parameter>
+      <parameter name="configAttributes" type="int[]"></parameter>
+    </method>
+  </add-node>
+  -->
+  
+  <attr path="/api/package[@name='org.webrtc']/class[@name='EglBase..CC']" name="abstract">false</attr>
+  <attr path="/api/package[@name='org.webrtc']/class[@name='EglBase..CC']" name="managedName">EglBaseFactory</attr>
+  <!-- <attr path="/api/package[@name='org.webrtc']/class[@name='EglBase..CC']/method[@name='create$$STATIC$$' and count(parameter)=2 and parameter[1][@type='org.webrtc.EglBase.Context'] and parameter[2][@type='int[]']]" name="managedName">create</attr> -->
 </metadata>
